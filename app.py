@@ -13,7 +13,9 @@ st.sidebar.header('Input Parameters')
 
 # Add input elements (e.g., sliders, text inputs) to collect user input
 Tea_type = st.sidebar.selectbox('Tea_type', options= ['LEAF_AND_ALL_DUST', 'Other(testing)'])
-location = st.sidebar.selectbox('location', options=['Kolkata','Other location(testing)'])
+location = st.sidebar.selectbox('location', options=['Kolkata','Guwahati',"Siliguri",
+                                                     'Jalpaiguri','mjunction',"Cochin",
+                                                     'Coonoor','Coimbatore'])
 
 # Create a prediction function that uses the model and user inputs
 def predict(location,Tea_type):
