@@ -33,7 +33,7 @@ class Ml_Model():
         column_list = ["Date"] + column_list
         self.data_location  = self.tea_data[column_list]
 
-        self.weather_data = pd.read_csv("input/"+self.location+'_data_filtered.csv')
+        self.weather_data = pd.read_csv('input/Kolkata_data_filtered.csv')
         self.weather_data.rename(columns = {"date":"Date"},inplace = True)
         self.weather_data['Date'] = pd.to_datetime(self.weather_data['Date'])
 
